@@ -1,0 +1,358 @@
+.itemsshopping {
+  text-decoration: none;
+  color: black;
+}
+.itemsshopping:hover {
+  text-decoration: none;
+}
+
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 50px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 50px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+@media screen and (max-width: 1250px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product {
+  display: block;
+  width: 300px;
+  height: 400px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.product:hover {
+  cursor: pointer;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+}
+
+.photo {
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+.productText1 {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: Barlow;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.095em;
+}
+
+.productText2 {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: Barlow;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.095em;
+}
+
+.buttonBuy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 50px;
+  margin-left: 75px;
+  margin-right: 75px;
+  border: 1px solid black;
+  font-family: Barlow;
+  font-size: 13px;
+  letter-spacing: 0.095em;
+}
+
+.buttonBuy:hover {
+  background-color: rgb(204, 187, 187);
+  cursor: pointer;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  text-align: center;
+  font-family: Barlow;
+  letter-spacing: 0.095em;
+}
+
+.more:hover {
+  background-color: rgb(204, 187, 187);
+  cursor: pointer;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  justify-items: center;
+  padding-top: 90px;
+  background-color: #00655a;
+  color: white;
+  height: 280px;
+  margin: auto;
+  width: 100%;
+}
+
+.newsletterText {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Barlow;
+  margin-bottom: 50px;
+  letter-spacing: 0.095em;
+}
+
+.emailText {
+  font-family: Barlow;
+  font-size: 14px;
+  color: white;
+  opacity: 100%;
+  padding-left: 10px;
+  letter-spacing: 0.095em;
+}
+
+.email {
+  width: 194px;
+  height: 34px;
+  background-color: #6caca4;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+}
+
+.signUpText {
+  font-family: Barlow;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2.5;
+  color: rgb(0, 0, 0);
+  opacity: 100%;
+  letter-spacing: 0.095em;
+}
+
+.signUp {
+  width: 100px;
+  height: 30px;
+  background-color: #e0d1bb;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.signUp:hover {
+  background-color: #c08f7e;
+  color: white;
+  cursor: pointer;
+}
+
+.footerHeader {
+  font-weight: 600;
+  font-family: Barlow;
+  font-size: 24px;
+  box-sizing: inherit;
+  margin-bottom: 20px;
+  letter-spacing: 0.095em;
+}
+
+.footerColumn {
+  font-weight: 300;
+  font-family: Barlow;
+  font-size: 13px;
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+  padding-left: 0px;
+  letter-spacing: 0.095em;
+}
+
+li {
+  margin-bottom: 10px;
+  box-sizing: inherit;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width:700px) {
+
+  footer {
+    grid-template-columns: 3fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr 1fr;
+    height: auto;
+  }
+
+  .footerColumn {
+    display: none;
+  }
+
+  .newsletter {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerText {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width:700px) and (max-width:1100px) {
+  
+  footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    justify-content: center;
+    padding-top: 90px;
+    background-color: #00655a;
+    color: white;
+    height: 280px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .newsletterText {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Barlow;
+    margin-bottom: 50px;
+    letter-spacing: 0.095em;
+  }
+  
+  .emailText {
+    font-family: Barlow;
+    font-size: 14px;
+    color: white;
+    opacity: 100%;
+    padding-left: 10px;
+    letter-spacing: 0.095em;
+  }
+  
+  .email {
+    width: 194px;
+    height: 34px;
+    left: 183px;
+    top: 249px;
+    background-color: #6caca4;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    align-items: center;
+    display: flex;
+  }
+  
+  .signUpText {
+    font-family: Barlow;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 2.5;
+    color: rgb(0, 0, 0);
+    opacity: 100%;
+    letter-spacing: 0.095em;
+  }
+  
+  .signUp {
+    width: 100px;
+    height: 30px;
+    left: 183px;
+    top: 293px;
+    background-color: #e0d1bb;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .signUp:hover {
+    background-color: #c08f7e;
+    color: white;
+    cursor: pointer;
+  }
+
+  .footerText {
+    width: 120px;
+  }
+
+  .footerHeader {
+    font-weight: 600;
+    font-family: Barlow;
+    font-size: 18px;
+    box-sizing: inherit;
+    margin-bottom: 20px;
+    letter-spacing: 0.095em;
+  }
+  
+  .footerColumn {
+    font-weight: 300;
+    font-family: Barlow;
+    font-size: 11px;
+    list-style-type: none;
+    box-sizing: inherit;
+    list-style-position: outside;
+    list-style-image: none;
+    padding-left: 0px;
+    letter-spacing: 0.095em;
+    margin-left: 0%;
+  }
+}
